@@ -1,0 +1,23 @@
+{
+  "name": "nestjs-with-npm-workspace",
+  "version": "1.0.0",
+  "description": "demonstrate nestjs with npm workspace issue",
+  "main": "index.js",
+  "scripts": {
+    "dev:nest": "npm run --workspace nestapp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyu0925/nestjs-with-npm-workspace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suyu0925/nestjs-with-npm-workspace/issues"
+  },
+  "homepage": "https://github.com/suyu0925/nestjs-with-npm-workspace#readme",
+  "workspaces": [
+    "packages/*"
+  ]
+}

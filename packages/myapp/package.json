@@ -1,0 +1,14 @@
+{
+    "name": "@myapp/myapp",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "tsx src/index.ts"
+    },
+    "dependencies": {
+        "@myapp/mylib": "*"
+    },
+    "devDependencies": {
+        "tsx": "^3.12.7"
+    }
+}
