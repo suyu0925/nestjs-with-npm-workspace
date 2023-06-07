@@ -4,7 +4,10 @@
   "description": "demonstrate nestjs with npm workspace issue",
   "main": "index.js",
   "scripts": {
-    "dev:nest": "npm run --workspace nestapp dev",
+    "build": "turbo run build",
+    "start": "npm run --workspace @myorg/myapp start",
+    "start:nest": "npm run --workspace @myorg/nestapp start:prod",
+    "dev:nest": "npm run --workspace @myorg/nestapp dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +21,11 @@
   },
   "homepage": "https://github.com/suyu0925/nestjs-with-npm-workspace#readme",
   "workspaces": [
-    "packages/*"
-  ]
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.2"
+  },
+  "packageManager": "npm@9.5.1"
 }

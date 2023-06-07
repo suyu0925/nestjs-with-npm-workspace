@@ -1,10 +1,8 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-// import mylib from '@myapp/mylib'
-import my_built_lib from '@myapp/my-built-lib'
+import mylib from '@myorg/mylib'
 
-// mylib()
-my_built_lib()
+mylib()
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
