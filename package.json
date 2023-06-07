@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
     "start": "npm run --workspace @myorg/myapp start",
     "start:nest": "npm run --workspace @myorg/nestapp start:prod",
-    "dev:nest": "npm run --workspace @myorg/nestapp dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:nest": "npm run --workspace @myorg/nestapp dev"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
     "apps/*"
   ],
   "devDependencies": {
+    "@myorg/eslint-config": "*",
+    "eslint": "^8.42.0",
     "turbo": "^1.10.2"
   },
   "packageManager": "npm@9.5.1"

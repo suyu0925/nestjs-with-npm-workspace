@@ -1,0 +1,13 @@
+{
+  "name": "@myorg/eslint-config",
+  "main": "index.js",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0"
+  }
+}
